@@ -1,7 +1,8 @@
 ---
 name: closeout
 license: MIT
-description: Use this skill when the user wants to know whether a project, branch, or work session is finished and safe to archive, close, or walk away from. Trigger on "is it safe to archive," "what's left before I close this out," "can I wrap this up," "closeout," "what did we just finish," "anything I'm about to lose," "ready to ship / retire / delete this workspace," or "status plus next steps" at the END of work. It produces ONE briefing: what was just completed, what is still open (split into blockers vs. nice-to-haves), an explicit archive verdict (SAFE / SAFE WITH NOTES / NOT YET), and a ranked next-steps chart where every row states its payoff. It is the end-of-work sibling of a mid-work status snapshot; use it when the question is "can I stop?", not "what should I do next hour?". Read-only: it never commits, pushes, deletes, or archives anything itself.
+description: >-
+  Use this skill when the user wants to know whether a project, branch, or work session is finished and safe to archive, close, or walk away from. Trigger on "is it safe to archive," "what's left before I close this out," "can I wrap this up," "closeout," "what did we just finish," "anything I'm about to lose," "ready to ship / retire / delete this workspace," or "status plus next steps" at the END of work. It produces ONE briefing: what was just completed, what is still open (split into blockers vs. nice-to-haves), an explicit archive verdict (SAFE / SAFE WITH NOTES / NOT YET), and a ranked next-steps chart where every row states its payoff. It is the end-of-work sibling of a mid-work status snapshot; use it when the question is "can I stop?", not "what should I do next hour?". Read-only: it never commits, pushes, deletes, or archives anything itself.
 ---
 
 # Closeout — completed, what's left, archive verdict, next steps
