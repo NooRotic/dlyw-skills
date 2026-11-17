@@ -16,9 +16,13 @@ truth about it, and hand the next move back to you.
 |---|---|---|
 | [`pulse`](skills/pulse/SKILL.md) | "Where am I, and what's next?" | A short state briefing and a ranked next-items chart, with the payoff of each item |
 | [`closeout`](skills/closeout/SKILL.md) | "Can I stop? What am I about to lose?" | What was finished, what is still open, an archive verdict (SAFE / SAFE WITH NOTES / NOT YET), and ranked next steps with a payoff for each |
+| [`startup`](skills/startup/SKILL.md) | "Catch me up. Where did I leave off?" | A returning-developer briefing: recent commits, uncommitted work, every unmerged branch (where unfinished work hides), open plans and PRs, and an optional memory-recall check |
+| [`social-preview`](skills/social-preview/SKILL.md) | "My link preview or avatar looks wrong." | Fixes for cropped avatars, blank or stale link-preview cards, and Open Graph meta, with PowerShell scripts for the image work and a cache-busting playbook |
 
-Both skills only read and report. They never commit, push, delete, or archive
-anything, and you stay in control of every action.
+`pulse`, `closeout` and `startup` only read and report. They never commit, push,
+delete, or archive anything, and you stay in control of every action.
+`social-preview` writes image files you ask it to generate (its scripts need
+Windows PowerShell).
 
 ## Install
 

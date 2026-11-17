@@ -1,0 +1,23 @@
+{
+  "skill_name": "social-preview",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I just swapped my GitHub avatar to a new pixel-art portrait but when I share my profile link on LinkedIn the preview still shows my OLD photo, and the top of my head is cut off. Source PNG is at C:\\images\\avatar_circle.png. Fix it.",
+      "expected_output": "Diagnoses the two problems (stale platform cache + 1.91:1 strip crop clipping the head); reframes the avatar with margin via reframe-avatar.ps1 (whole_ variant), verifies with preview-strip.ps1, and gives the cache-bust playbook (Post Inspector + ?v=N + Featured re-add).",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "My portfolio site at C:\\sites\\portfolio renders a blank card when I paste the link in LinkedIn. Can you make it show a proper preview image and title?",
+      "expected_output": "Identifies missing/relative og:image as the blank-card cause; generates a 1200x630 og.png into public/ with make-og-card.ps1; injects the og-meta-template.html block with an ABSOLUTE og:image url; notes deploy + cache-bust.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "The Twitter/X card for example.dev is broken - it just shows the URL with no image. The repo is at C:\\sites\\example-app. Sort it out.",
+      "expected_output": "Checks index.html head for og/twitter tags, finds them missing or imageless, builds og.png + injects meta (summary_large_image, absolute image url), and explains the cache-bust step so the fix actually shows.",
+      "files": []
+    }
+  ]
+}
