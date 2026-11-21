@@ -4,7 +4,10 @@
 ## The 46-second version
 A short comic about the three moments these skills are for. Sound on.
 
-https://github.com/user-attachments/assets/7d91914f-6ad6-4efe-b383-012a57d49ff9
+
+https://github.com/user-attachments/assets/c5c6ba9a-7760-4736-8d73-65101bb543cb
+
+
 
 Every project has a moment where you look up and can't tell where you are, what
 got finished, or what comes next. These skills are for that moment.
